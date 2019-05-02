@@ -1,21 +1,25 @@
 menu:
-    Blog: /
-    Archive: /archives/
-    Weibo: http://weibo.com/sunchongsheng
-    GitHub: https://github.com/pinggod
-    Rss: /atom.xml
+    HOME: /
+    TAGS: /tags/
+    ABOUT: /about/
+    # SEARCH: /search/
 
-favicon: /favicon.png
-logo: /favicon.png
+favicon: /dice.png
+logo: /dice.png
 
 # Comment
-# e.g disqus: seansun
-disqus:
-duoshuo:
+gitalk:
+    enable: true
+    owner: jackliu234
+    repo: jackliu234.github.io
+    client_id: 4ec287ddd4ac34ff5087
+    client_secret: ae45426765f12ac3e2f903662b8938dc4881f703
 
-# Analytics
-# google-analytics:
-# ga: UA-xxxxxxxx-x
+# Google Analytics
+ga: UA-133275176-1
 
 # Copyright Infomation
-startyear: 2015
+startyear: 2019
+
+mathjax:
+  enable: true
