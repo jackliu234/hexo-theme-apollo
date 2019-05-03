@@ -2,7 +2,7 @@ menu:
     HOME: /
     TAGS: /tags/
     ABOUT: /about/
-    # SEARCH: /search/
+    SEARCH: /search/
 
 favicon: /dice.png
 logo: /dice.png
