@@ -17,7 +17,7 @@ mixin posts()
                     +postInfo(item)
                     .post-content
                         != item.excerpt
-                    a.read-more(href= url_for(item.path))!= __('more')
+                    // a.read-more(href= url_for(item.path))!= __('more')
         - })
 
 //- Archive Page
@@ -53,7 +53,7 @@ mixin tagList()
     .archive
         - site.tags.each(function (t) {
             h2.archive-year!= __(t.name)
-            - site.tags.findOne({name: t.name}).posts.forEach(function (item) {
+            - site.tags.findOne({name: t.name}).posts.sort('date', -1).forEach(function (item) {
                 .post-item
                     +postInfo(item)
                     a.post-title-link(href= url_for(item.path))

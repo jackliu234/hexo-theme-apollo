@@ -1,6 +1,6 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-    font-family: sans-serif;
+    font-family: 'Zilla Slab';
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -48,7 +48,7 @@ dfn {
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 24px;
     margin: 0.67em 0
 }
 
@@ -97,8 +97,8 @@ pre {
     overflow: auto
 }
 
-code, kbd, pre, samp {
-    font-family: monospace, monospace;
+kbd, samp {
+    font-family: 'Inconsolata', monospace;
     font-size: 1em
 }
 
@@ -198,10 +198,10 @@ html, body {
 body {
     margin: 0;
     color: #34495e;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6;
     background-color: #fff;
-    font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif
+    font-family: 'Zilla Slab';
 
 }
 
@@ -234,14 +234,12 @@ hr {
 
 code {
     margin: 0 2px;
-    padding: 3px 5px;
+    padding: 1px 5px;
     color: #6190e8;
     border: solid #6190e8;
     border-radius: 5px;
     border-width: thin;
-
     white-space: inherit
-
 }
 
 iframe, video {
@@ -395,7 +393,7 @@ header .nav-list-item a {
     position: sticky;
     left: -0.7em;
     top: -4px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold
 }
 
@@ -408,7 +406,7 @@ header .nav-list-item a {
 }
 
 .post-content h4, .post-content h5, .post-content h6 {
-    font-size: 18px
+    font-size: 20px
 }
 
 .post-content a {
@@ -460,7 +458,7 @@ header .nav-list-item a {
     font-weight: bold;
     text-align: center;
     background-color: #f66;
-    font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif
+    font-family: 'Zilla Slab';
 }
 
 #mask {
@@ -477,8 +475,13 @@ header .nav-list-item a {
     max-width: 95%
 }
 
-code, pre {
+code {
     font-size: 1em;
+    font-family: 'Zilla Slab';
+}
+
+pre {
+    font-size: 0.95em;
     background-color: #F5F5F5;
     font-family: 'Inconsolata', monospace;
 }
@@ -744,8 +747,14 @@ footer .copyright a:hover {
 }
 
 @font-face {
-    font-family: 'sourcesanspro';
-    src: url("../font/sourcesanspro.woff2") format("woff2"), url("../font/sourcesanspro.woff") format("woff");
-    font-weight: normal;
-    font-style: normal
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/zilla-slab/zilla-slab-v4-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Zilla Slab'), local('ZillaSlab-Regular'),
+       url('../font/zilla-slab/zilla-slab-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/zilla-slab/zilla-slab-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/zilla-slab/zilla-slab-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../font/zilla-slab/zilla-slab-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/zilla-slab/zilla-slab-v4-latin-regular.svg#ZillaSlab') format('svg'); /* Legacy iOS */
 }
