@@ -1,5 +1,6 @@
 menu:
     HOME: /
+    ARCHIVE: /archive/
     TAGS: /tags/
     ABOUT: /about/
     SEARCH: /search/
