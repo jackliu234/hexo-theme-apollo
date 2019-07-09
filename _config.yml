@@ -1,12 +1,12 @@
 menu:
-    HOME: /
-    ARCHIVE: /archive/
-    TAGS: /tags/
+    # HOME: /
+    # ARCHIVE: /archive/
+    BLOG: /tags/
     ABOUT: /about/
     SEARCH: /search/
 
-favicon: /dice.png
-logo: /dice.png
+favicon: /favicon.png
+logo: /favicon.png
 
 # Comment
 gitalk:

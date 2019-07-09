@@ -283,7 +283,6 @@ header .logo-link {
 
 header .nav {
     float: right;
-    left: 80px
 }
 
 header .logo-link img {
@@ -292,12 +291,12 @@ header .logo-link img {
 
 header .nav-list-item {
     display: inline-block;
-    padding: 19px 10px
+    padding: 20px 15px
 }
 
 header .nav-list-item a {
-    font-size: 18px;
-    line-height: 1.4
+    font-size: 22px;
+    line-height: 1.0
 }
 
 .home.post-list {
