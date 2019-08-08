@@ -52,11 +52,45 @@ mixin post(item)
 mixin tagList()
     .archive
         - site.tags.each(function (t) {
-            h2.archive-year!= __(t.name)
-            - site.tags.findOne({name: t.name}).posts.sort('date', -1).forEach(function (item) {
-                .post-item
-                    +postInfo(item)
-                    a.post-title-link(href= url_for(item.path))
-                        != item.title
-            - })
+            if t.name == 'Quant'
+                h2.archive-year!= __(t.name)
+                - site.tags.findOne({name: t.name}).posts.sort('date', -1).forEach(function (item) {
+                        .post-item
+                            +postInfo(item)
+                            a.post-title-link(href= url_for(item.path))
+                                != item.title
+                - })
+        - })
+
+        - site.tags.each(function (t) {
+            if t.name == 'Notes'
+                h2.archive-year!= __(t.name)
+                - site.tags.findOne({name: t.name}).posts.sort('date', -1).forEach(function (item) {
+                        .post-item
+                            +postInfo(item)
+                            a.post-title-link(href= url_for(item.path))
+                                != item.title
+                - })
+        - })
+
+        - site.tags.each(function (t) {
+            if t.name != 'Quant' && t.name != 'Notes' && t.name != 'Other'
+                h2.archive-year!= __(t.name)
+                - site.tags.findOne({name: t.name}).posts.sort('date', -1).forEach(function (item) {
+                        .post-item
+                            +postInfo(item)
+                            a.post-title-link(href= url_for(item.path))
+                                != item.title
+                - })
+        - })
+
+        - site.tags.each(function (t) {
+            if t.name == 'Other'
+                h2.archive-year!= __(t.name)
+                - site.tags.findOne({name: t.name}).posts.sort('date', -1).forEach(function (item) {
+                        .post-item
+                            +postInfo(item)
+                            a.post-title-link(href= url_for(item.path))
+                                != item.title
+                - })
         - })
